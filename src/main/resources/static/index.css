@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 10%;
+    text-align: center;
+    background: #6990F2;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+.box {
+    margin-top: 10%;
+}
+
+input[type="submit"] {
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #6990F2;
+    background-color: #e9f0ff;
+    border: 0;
+}
+
+input[type="text"] {
+    width: 360px;
+    height: 30px;
+    outline: none;
+    padding-left: 10px;
+    border: 0;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=https://www.thymeleaf.org>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>打包文件为ZIP</title>
+  <link rel="Shortcut Icon" th:href="@{images/favicon.ico}" type="image/x-icon" />
+  <link rel="stylesheet" th:href="@{file.css}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>单次上传文件不得超过20MB！</header>
+    <form th:action="@{file}" method="POST" enctype="multipart/form-data" id="form">
+      <input class="file-input" type="file" name="uploadedFiles" hidden>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>点我选择文件</p>
+    </form>
+
+    <section class="uploaded-area"></section>
+    <input type="submit" value="点我开始下载" class="submitBtn">
+  </div>
+
+  <script th:src="@{file.js}"></script>
+
+</body>
+
+</html>
